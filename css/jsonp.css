@@ -1,0 +1,172 @@
+/*通用样式*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 12px;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.productList{
+	margin: 50px;
+	position: relative;
+}
+
+/*商品列表的左侧*/
+#productListLeft{
+	background-color: #c81623;
+	width: 190px;
+	padding: 1px 0px 1px 1px;
+	font-size: 14px;
+	position: relative;
+	z-index: 100;
+}
+#productListLeft li{
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+}
+#productListLeft li a{
+	color: #fff;
+}
+#productListLeft li span{
+	float: right;
+	color: #fff;
+}
+#productListLeft li.active{
+	background-color: #f7f7f7;
+}
+#productListLeft li .childActive{
+	color: #c81623; 
+}
+
+
+/*右侧的商品列表*/
+#productListRight{
+	width: 960px;
+	position: absolute;
+	left: 190px;
+	top: 0px;
+}
+#productListRight .productListRight{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: #f7f7f7;
+	padding: 15px;
+	display: none;
+	font-size: 12px;
+	overflow: hidden;
+	border: 1px solid #C81623;
+}
+#productListRight .productListRight dl a:hover{
+	color: #C81623;
+}
+
+/*左部内容*/
+#productListRight .productListRight .left{
+	width: 740px;
+	float: left;
+}
+
+/*头部标题*/
+.productListRight .title{
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.productListRight .title li{
+	float: left;
+	margin-right: 10px;
+}
+.productListRight .title li a{
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	background-color: #7c7171;
+	color: #fff;
+}
+.productListRight .title li a span{
+	float: left;
+	padding: 0 10px;
+}
+.productListRight .title li a b{
+	float: right;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	background-color: #5c5251;
+}
+.productListRight .title li:hover span{
+	background-color: #c81623;
+}
+.productListRight .title li:hover b{
+	background-color: #b1191a;
+}
+
+/*下部的主要内容*/
+.productListRight dl{
+	overflow: hidden;
+	padding: 5px 0;
+	line-height: 26px;
+}
+.productListRight dl dt{
+	float: left;
+	margin-right: 10px;
+	width: 70px;
+	text-align: right;
+}
+.productListRight dl dt a{
+	color: #666666;
+	font-weight: bold;
+}
+.productListRight dl dt a span{
+	padding: 0 5px;
+}
+.productListRight dl dd{
+	float: left;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 4px;
+	width: 630px;
+}
+.productListRight dl dd span{
+	display: inline-block;
+}
+.productListRight dl dd span a{
+	padding: 0 8px;
+	border-left: 1px solid #ccc;
+	color: #666666;
+}
+
+/*右部的主要内容*/
+.productListRight .right{
+	width: 170px;
+	float: right;
+}
+.productListRight .right .rightTop{
+	overflow: hidden;
+}
+.productListRight .right .rightTop li{
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+.productListRight .right .rightTop li img{
+	width: 83px;
+	height: 35px;
+	display: block;
+}
+.productListRight .right .rightBottom{
+	margin-top: 6px;
+}
+.productListRight .right .rightBottom a{
+	display: block;
+	margin-bottom: 1px;
+}
+.productListRight .right .rightBottom a img{
+	display: block;
+}
+
